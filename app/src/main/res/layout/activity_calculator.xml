@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:background="@android:color/holo_purple"
+    tools:context="com.example.raven.calculator2017.Calculator"
+    android:weightSum="7">
+
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/background_light"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="bottom|end"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textAlignment="gravity"
+        android:textSize="80dp" />
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/display">
+
+        <TextView
+            android:id="@+id/TextView18"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="C"
+            
+            />
+
+        <TextView
+            android:id="@+id/TextView25"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text=":"
+            
+            />
+
+        <TextView
+            android:id="@+id/TextView29"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickOperator"
+            android:padding="0dp"
+            android:text="*"
+            
+            />
+
+        <TextView
+            android:id="@+id/TextView30"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickCalculate"
+            android:padding="0dp"
+            android:text="Del"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/TextView24"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="7"
+
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/TextView23"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="8"
+
+            />
+
+        <TextView
+            android:id="@+id/TextView"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="8"
+            
+            />
+
+        <TextView
+            android:id="@+id/TextView22"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="-"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/przyciski3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/TextView26"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="9"
+            
+            />
+
+        <TextView
+            android:id="@+id/TextView21"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="3"
+            
+            />
+
+        <TextView
+            android:id="@+id/TextView20"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="2"
+            
+            />
+
+        <TextView
+            android:id="@+id/TextView19"
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:onClick="onClickOperator"
+            android:padding="0dp"
+            android:text="+"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/przyciski4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/przyciski3"
+        android:layout_weight="2"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <TextView
+            style="@style/przycisk"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+
+            android:layout_weight="1"
+            android:onClick="onClickNumber"
+            android:padding="0dp"
+            android:text="9"
+
+            />
+                <TextView
+                    style="@style/przycisk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:onClick="onClickNumber"
+                    android:padding="0dp"
+                    android:text="3"
+
+                    />
+
+                <TextView
+                    style="@style/przycisk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:onClick="onClickNumber"
+                    android:padding="0dp"
+                    android:text="2"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/przycisk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="2"
+                    android:onClick="onClickNumber"
+                    android:padding="0dp"
+                    android:text="0"
+
+                    />
+                <TextView
+                    style="@style/przycisk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:onClick="onClickNumber"
+                    android:padding="0dp"
+                    android:text=","
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/przycisk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@android:color/holo_purple"
+                android:onClick="onClickCalculate"
+                android:padding="0dp"
+                android:tag="calculate"
+                android:text="@string/rownasie" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
